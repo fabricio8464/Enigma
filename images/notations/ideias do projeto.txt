@@ -1,0 +1,50 @@
+atributos da Casa
+Cor
+Nacionalidade
+Bebida
+Comida Favorita
+Animal
+
+
+enigma: 
+ - a terceira casa tem uma das cores primaria
+ - o espanhol é alergico a peixe
+ - a primeira casa tem cheiro de gato
+ - a casa vermelha nao tem um animal não muito convencional
+ - a primeira casa o dono odeia bebida alcolica 
+ - o romano ama comidas de massa e ele é alergico a pelos
+ - a quarta casa é apelidada de sol por conta de sua cor
+ - O residente que prefere chá mora na casa à esquerda da casa com o cachorro.
+ - A pessoa que gosta de hot-dogs vive ao lado da casa onde se bebe cerveja.
+ - O espanhol e o romano são vizinhos.
+ - A casa com a tartaruga está à direita da casa onde mora o Afonso.
+
+enigma GPT
+ -A casa verde é a terceira casa.
+ -O dono da casa laranja bebe vodka.
+ -O dono da casa com o gato come nhoque.
+ -O romano vive na casa verde.
+ -O dono da casa rosa come hot-dog
+ -A casa rosa é a primeira.
+ -Alonso é o dono da casa rosa.
+ -O espanhol bebe chá.
+ -O dono da tartaruga vive na casa vermelha.
+ -Afonso vive na casa ao lado da casa verde.
+ -A casa verde está à direita da casa vermelha.
+ -Afonso bebe água.
+ -O grego come paella.
+ -Anderson tem um cachorro.
+ -Alfredo vive na casa ao lado do dono que tem um cachorro.
+
+
+
+
+
+
+Resposta correta :
+var correctAnswer =
+[{home: casa 1, color:rosa, owner:Alonso, nationality:espanhol, drink:chá, food:hot-dog, pet:peixe}] 
+[{home: casa 2, color:vermelho, owner:Afonso, nationality:grego, drink:agua, food:paella, pet:tartaruga}]
+[{home: casa 3, color:verde, owner:Anderson, nationality:romano, drink:cerveja, food:macarrao, pet:cachorro}]
+[{home: casa 4, color:laranja, owner:Alfredo, nationality:italiano, drink:vodka, food:nhoque, pet:gato }]
+

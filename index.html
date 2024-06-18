@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body onload="autoLoad()">
+    <div class="div-btn-theme">
+      <div class="row">
+        <p class="title">Enigmator</p>   
+        <button class="change-theme" id="theme-button" onclick="changeTheme('light','dark')">Tema</button>
+      </div>
+    </div>
+    <div class="enigmaContainer">
+      <h2></h2>
+      <div class="div-enigmas">
+        <h1 id="enigma"></h1>
+      </div> 
+    </div>
+    <div class="container">
+      <div class="content">
+        <div class="row">
+          <div class="col" id="first-column">
+            <legend class="legend-content">Casa 1</legend>
+            <div class="display">
+              <button
+                class="btn-previous"
+                onclick="elementValueChanger('c1',-1,'casas')"
+              >
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-esquerda.png"
+                  alt="seta-esquerda"
+                />
+              </button>
+              <h1 id="c1">Cor</h1>
+              <button
+                class="btn-next"
+                onclick="elementValueChanger('c1',+1,'casas')"
+              >
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-direita.png"
+                  alt="seta-direita"
+                />
+              </button>
+            </div>
+            <div class="display">
+              <button
+                class="btn-previous"
+                onclick="elementValueChanger('d1',-1,'donos')"
+              >
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-esquerda.png"
+                  alt="seta-esquerda"
+                />
+              </button>
+              <h1 id="d1">Dono</h1>
+              <button
+                class="btn-next"
+                onclick="elementValueChanger('d1',+1,'donos')"
+              >
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-direita.png"
+                  alt="seta-direita"
+                />
+              </button>
+            </div>
+            <div class="display">
+              <button
+                class="btn-previous"
+                onclick="elementValueChanger('n1',-1,'nacionalidades')"
+              >
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-esquerda.png"
+                  alt="seta-esquerda"
+                />
+              </button>
+              <h1 id="n1">Naciona...</h1>
+              <button
+                class="btn-next"
+                onclick="elementValueChanger('n1',+1,'nacionalidades')"
+              >
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-direita.png"
+                  alt="seta-direita"
+                />
+              </button>
+            </div>
+            <div class="display">
+              <button
+                class="btn-previous"
+                onclick="elementValueChanger('b1',-1,'bebidas')"
+              >
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-esquerda.png"
+                  alt="seta-esquerda"
+                />
+              </button>
+              <h1 id="b1">Bebida</h1>
+              <button
+                class="btn-next"
+                onclick="elementValueChanger('b1',+1,'bebidas')"
+              >
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-direita.png"
+                  alt="seta-direita"
+                />
+              </button>
+            </div>
+            <div class="display">
+              <button
+                class="btn-previous"
+                onclick="elementValueChanger('co1',-1,'comidas')"
+              >
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-esquerda.png"
+                  alt="seta-esquerda"
+                />
+              </button>
+              <h1 id="co1">Comida</h1>
+              <button
+                class="btn-next"
+                onclick="elementValueChanger('co1',+1,'comidas')"
+              >
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-direita.png"
+                  alt="seta-direita"
+                />
+              </button>
+            </div>
+            <div class="display">
+              <button
+                class="btn-previous"
+                onclick="elementValueChanger('a1',-1, 'animais')"
+              >
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-esquerda.png"
+                  alt="seta-esquerda"
+                />
+              </button>
+              <h1 id="a1">Animal</h1>
+              <button
+                class="btn-next"
+                onclick="elementValueChanger('a1',+1,'animais')"
+              >
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-direita.png"
+                  alt="seta-direita"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="col" id="second-column">
+            <legend class="legend-content">Casa 2</legend>
+            <div class="display">
+              <button
+                class="btn-previous"
+                onclick="elementValueChanger('c2',-1, 'casas')"
+              >
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-esquerda.png"
+                  alt="seta-esquerda"
+                />
+              </button>
+              <h1 id="c2">Cor</h1>
+              <button
+                class="btn-next"
+                onclick="elementValueChanger('c2',+1, 'casas')"
+              >
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-direita.png"
+                  alt="seta-direita"
+                />
+              </button>
+            </div>
+            <div class="display">
+              <button
+                class="btn-previous"
+                onclick="elementValueChanger('d2',-1, 'donos')"
+              >
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-esquerda.png"
+                  alt="seta-esquerda"
+                />
+              </button>
+              <h1 id="d2">Dono</h1>
+              <button
+                class="btn-next"
+                onclick="elementValueChanger('d2',+1, 'donos')"
+              >
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-direita.png"
+                  alt="seta-direita"
+                />
+              </button>
+            </div>
+            <div class="display">
+              <button
+                class="btn-previous"
+                onclick="elementValueChanger('n2',-1, 'nacionalidades')"
+              >
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-esquerda.png"
+                  alt="seta-esquerda"
+                />
+              </button>
+              <h1 id="n2">Naciona...</h1>
+              <button
+                class="btn-next"
+                onclick="elementValueChanger('n2',+1, 'nacionalidades')"
+              >
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-direita.png"
+                  alt="seta-direita"
+                />
+              </button>
+            </div>
+            <div class="display">
+              <button class="btn-previous" onclick="elementValueChanger('b2',-1, 'bebidas')">
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-esquerda.png"
+                  alt="seta-esquerda"
+                />
+              </button>
+              <h1 id="b2">Bebida</h1>
+              <button class="btn-next" onclick="elementValueChanger('b2',+1, 'bebidas')">
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-direita.png"
+                  alt="seta-direita"
+                />
+              </button>
+            </div>
+            <div class="display">
+              <button class="btn-previous" onclick="elementValueChanger('co2',-1, 'comidas')">
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-esquerda.png"
+                  alt="seta-esquerda"
+                />
+              </button>
+              <h1 id="co2">Comida</h1>
+              <button class="btn-next" onclick="elementValueChanger('co2',+1, 'comidas')">
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-direita.png"
+                  alt="seta-direita"
+                />
+              </button>
+            </div>
+            <div class="display">
+              <button class="btn-previous" onclick="elementValueChanger('a2',-1, 'animais')">
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-esquerda.png"
+                  alt="seta-esquerda"
+                />
+              </button>
+              <h1 id="a2">Animal</h1>
+              <button class="btn-next" onclick="elementValueChanger('a2',+1, 'animais')">
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-direita.png"
+                  alt="seta-direita"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="col" id="third-column">
+            <legend class="legend-content">Casa 3</legend>
+            <div class="display">
+              <button class="btn-previous" onclick="elementValueChanger('c3',-1, 'casas')">
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-esquerda.png"
+                  alt="seta-esquerda"
+                />
+              </button>
+              <h1 id="c3">Cor</h1>
+              <button class="btn-next" onclick="elementValueChanger('c3',+1, 'casas')">
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-direita.png"
+                  alt="seta-direita"
+                />
+              </button>
+            </div>
+            <div class="display">
+              <button class="btn-previous" onclick="elementValueChanger('d3',-1, 'donos')">
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-esquerda.png"
+                  alt="seta-esquerda"
+                />
+              </button>
+              <h1 id="d3">Dono</h1>
+              <button class="btn-next" onclick="elementValueChanger('d3',+1, 'donos')">
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-direita.png"
+                  alt="seta-direita"
+                />
+              </button>
+            </div>
+            <div class="display">
+              <button class="btn-previous" onclick="elementValueChanger('n3',-1, 'nacionalidades')">
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-esquerda.png"
+                  alt="seta-esquerda"
+                />
+              </button>
+              <h1 id="n3">Naciona...</h1>
+              <button class="btn-next" onclick="elementValueChanger('n3',+1, 'nacionalidades')">
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-direita.png"
+                  alt="seta-direita"
+                />
+              </button>
+            </div>
+            <div class="display">
+              <button class="btn-previous" onclick="elementValueChanger('b3',-1, 'bebidas')">
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-esquerda.png"
+                  alt="seta-esquerda"
+                />
+              </button>
+              <h1 id="b3">Bebida</h1>
+              <button class="btn-next" onclick="elementValueChanger('b3',+1, 'bebidas')">
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-direita.png"
+                  alt="seta-direita"
+                />
+              </button>
+            </div>
+            <div class="display">
+              <button class="btn-previous" onclick="elementValueChanger('co3',-1, 'comidas')">
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-esquerda.png"
+                  alt="seta-esquerda"
+                />
+              </button>
+              <h1 id="co3">Comida</h1>
+              <button class="btn-next" onclick="elementValueChanger('co3',+1, 'comidas')">
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-direita.png"
+                  alt="seta-direita"
+                />
+              </button>
+            </div>
+            <div class="display">
+              <button class="btn-previous" onclick="elementValueChanger('a3',-1, 'animais')">
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-esquerda.png"
+                  alt="seta-esquerda"
+                />
+              </button>
+              <h1 id="a3">Animal</h1>
+              <button class="btn-next" onclick="elementValueChanger('a3',+1, 'animais')">
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-direita.png"
+                  alt="seta-direita"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="col" id="four-column">
+            <legend class="legend-content">Casa 4</legend>
+            <div class="display">
+              <button class="btn-previous" onclick="elementValueChanger('c4',-1, 'casas')">
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-esquerda.png"
+                  alt="seta-esquerda"
+                />
+              </button>
+              <h1 id="c4">Cor</h1>
+              <button class="btn-next" onclick="elementValueChanger('c4',+1, 'casas')">
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-direita.png"
+                  alt="seta-direita"
+                />
+              </button>
+            </div>
+            <div class="display">
+              <button class="btn-previous" onclick="elementValueChanger('d4',-1, 'donos')">
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-esquerda.png"
+                  alt="seta-esquerda"
+                />
+              </button>
+              <h1 id="d4">Dono</h1>
+              <button class="btn-next" onclick="elementValueChanger('d4',+1, 'donos')"">
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-direita.png"
+                  alt="seta-direita"
+                />
+              </button>
+            </div>
+            <div class="display">
+              <button class="btn-previous" onclick="elementValueChanger('n4',-1, 'nacionalidades')">
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-esquerda.png"
+                  alt="seta-esquerda"
+                />
+              </button>
+              <h1 id="n4">Naciona...</h1>
+              <button class="btn-next" onclick="elementValueChanger('n4',+1, 'nacionalidades')">
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-direita.png"
+                  alt="seta-direita"
+                />
+              </button>
+            </div>
+            <div class="display">
+              <button class="btn-previous" onclick="elementValueChanger('b4',-1, 'bebidas')">
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-esquerda.png"
+                  alt="seta-esquerda"
+                />
+              </button>
+              <h1 id="b4">Bebida</h1>
+              <button class="btn-next" onclick="elementValueChanger('b4',+1, 'bebidas')">
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-direita.png"
+                  alt="seta-direita"
+                />
+              </button>
+            </div>
+            <div class="display">
+              <button class="btn-previous" onclick="elementValueChanger('co4',-1, 'comidas')">
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-esquerda.png"
+                  alt="seta-esquerda"
+                />
+              </button>
+              <h1 id="co4">Comida</h1>
+              <button class="btn-next" onclick="elementValueChanger('co4',+1, 'comidas')">
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-direita.png"
+                  alt="seta-direita"
+                />
+              </button>
+            </div>
+            <div class="display">
+              <button class="btn-previous" onclick="elementValueChanger('a4',-1, 'animais')">
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-esquerda.png"
+                  alt="seta-esquerda"
+                />
+              </button>
+              <h1 id="a4">Animal</h1>
+              <button class="btn-next" onclick="elementValueChanger('a4',+1, 'animais')">
+                <img
+                  width="15px"
+                  src="./images/buttons/circulo-de-seta-direita.png"
+                  alt="seta-direita"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <button class="btn-aswer" onclick="getCorrectAnswer()">Corrigir</button>
+      </div>
+
+      <div class="modal-container" id="modal">
+        <div class="modal-content">
+          <div class="modal-title" style="display: none;">
+            <p id="title-modal">Titulo do Modal <button class="close-modal">X</button></p>
+          </div>
+          <div class="content-modal">
+            <div  id="imgModal"></div>
+          </div>
+          <div class="footer-modal">
+            <div class="btn-modal">
+              <button class="btn-close-modal" onclick="closeModal()">OK</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
